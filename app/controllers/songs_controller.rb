@@ -13,7 +13,7 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.new(song_params)
-    if !@song.has_key?(:released)
+    if @song.released.nil?
       @song.released = false
     end
 
