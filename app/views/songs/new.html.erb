@@ -1,0 +1,15 @@
+<h1>New Song Form</h1>
+
+<%= form_for @song do |f| %>
+  <%= f.label "Title: " %>
+  <%= f.text_field @song.title %>
+  <%= f.label "Release Year: " %>
+  <%= f.text_field @song.release_year %>
+  <%= f.label "Released?: " %>
+  <%= f.text_field @song.released %>
+  <%= f.label "Artist Name: " %>
+  <%= f.text_field @song.artist_name %>
+  <%= f.label "Genre: " %>
+  <%= f.text_field @song.genre %>
+  <%= f.submit %>
+<% end %>
