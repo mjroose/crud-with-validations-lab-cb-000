@@ -2,14 +2,14 @@
 
 <%= form_for @song do |f| %>
   <%= f.label "Title: " %>
-  <%= f.text_field @song.title %>
+  <%= f.text_field @song.title %><br>
   <%= f.label "Release Year: " %>
-  <%= f.text_field @song.release_year %>
+  <%= f.text_field @song.release_year %><br>
   <%= f.label "Released?: " %>
-  <%= f.text_field @song.released %>
+  <%= f.text_field @song.released %><br>
   <%= f.label "Artist Name: " %>
-  <%= f.text_field @song.artist_name %>
+  <%= f.text_field @song.artist_name %><br>
   <%= f.label "Genre: " %>
-  <%= f.text_field @song.genre %>
+  <%= f.text_field @song.genre %><br>
   <%= f.submit %>
 <% end %>
