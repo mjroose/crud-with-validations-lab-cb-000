@@ -14,7 +14,10 @@ class SongsController < ApplicationController
   def create
     binding.pry
     @song = Song.new(song_params)
-    @song.released = false
+    if !@song.has_key?(:released)
+      @song.released = false
+    end
+
     if @song.save
       redirect_to song_path(@song)
     else
